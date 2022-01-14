@@ -32,11 +32,5 @@ const Timer = ({ timerDays, timerHours, timerMinutes, timerSeconds }) => {
     </Grid>
   );
 };
-Timer.defaultProps = {
-  timerDays: "00",
-  timerHours: "00",
-  timerMinutes: "00",
-  timerSeconds: "00",
-};
 
 export default Timer;

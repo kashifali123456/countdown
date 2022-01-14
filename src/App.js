@@ -2,15 +2,15 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import CountDownTimer from "./Components/CountDownTimer";
 const App = () => {
-  const [timerDays, setTimerDays] = useState();
-  const [timerHours, setTimerHours] = useState();
-  const [timerMinutes, setTimerMinutes] = useState();
-  const [timerSeconds, setTimerSeconds] = useState();
+  const [timerDays, setTimerDays] = useState("00");
+  const [timerHours, setTimerHours] = useState("00");
+  const [timerMinutes, setTimerMinutes] = useState("00");
+  const [timerSeconds, setTimerSeconds] = useState("00");
 
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("january 14,2022 16:30:00 ").getTime();
+    const countDownDate = new Date("january 14,2022 18:30:00 ").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
